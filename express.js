@@ -10,6 +10,9 @@ app.get('/getmovie',(req, res)=>{
         if(err){
             console.log(err)
         }
-      
+        else{
+            const movie = JSON.parse(data)
+            res.send(movie)
+        }
 
 app.listen(3000)
